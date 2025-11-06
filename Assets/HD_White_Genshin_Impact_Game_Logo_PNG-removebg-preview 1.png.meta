@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 4c5562ecba1f78d4682c3d3773493684
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3032443357410939791
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_0
+  - first:
+      213: 7340338276530389623
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_1
+  - first:
+      213: -2293651000302355358
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_2
+  - first:
+      213: -5802361860309850013
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_3
+  - first:
+      213: 6091781518705753524
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_4
+  - first:
+      213: 2026764684338430990
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_5
+  - first:
+      213: -6605217777580395536
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_6
+  - first:
+      213: -6898485729539062791
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_7
+  - first:
+      213: 2845138810606494338
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_8
+  - first:
+      213: -2899486613193757328
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_9
+  - first:
+      213: -1139789603026277184
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_10
+  - first:
+      213: 3490680851853980161
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_11
+  - first:
+      213: 1558090758721962667
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_12
+  - first:
+      213: -6239092213557409644
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_13
+  - first:
+      213: -7975318542810154861
+    second: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 206
+        width: 139
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83d8ffba27651a20800000000000000
+      internalID: 3032443357410939791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 271
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7720ccf85ce1ed560800000000000000
+      internalID: 7340338276530389623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_2
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 204
+        width: 54
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c324841905b20e0800000000000000
+      internalID: -2293651000302355358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 282
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368e4f951aed97fa0800000000000000
+      internalID: -5802361860309850013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 271
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bdfebff30b5a8450800000000000000
+      internalID: 6091781518705753524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 202
+        width: 94
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e048c4dfdb3802c10800000000000000
+      internalID: 2026764684338430990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_6
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 204
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3b93f5d6d8554a0800000000000000
+      internalID: -6605217777580395536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_7
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 204
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f309ba57c7a340a0800000000000000
+      internalID: -6898485729539062791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_8
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 210
+        width: 55
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282a0ee8ca6fb7720800000000000000
+      internalID: 2845138810606494338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_9
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 167
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07de5959944f2c7d0800000000000000
+      internalID: -2899486613193757328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_10
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 167
+        width: 43
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc6fe81567ae20f0800000000000000
+      internalID: -1139789603026277184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_11
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 167
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102b3078db3617030800000000000000
+      internalID: 3490680851853980161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_12
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 167
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba201793a437f9510800000000000000
+      internalID: 1558090758721962667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_13
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 167
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498410a10ba4a69a0800000000000000
+      internalID: -6239092213557409644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_14
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 167
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 398f6355a0af15190800000000000000
+      internalID: -7975318542810154861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_0: 3032443357410939791
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_1: 7340338276530389623
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_10: -1139789603026277184
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_11: 3490680851853980161
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_12: 1558090758721962667
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_13: -6239092213557409644
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_14: -7975318542810154861
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_2: -2293651000302355358
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_3: -5802361860309850013
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_4: 6091781518705753524
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_5: 2026764684338430990
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_6: -6605217777580395536
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_7: -6898485729539062791
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_8: 2845138810606494338
+      HD_White_Genshin_Impact_Game_Logo_PNG-removebg-preview 1_9: -2899486613193757328
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
