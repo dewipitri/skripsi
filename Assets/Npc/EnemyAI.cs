@@ -1,9 +1,12 @@
-using UnityEngine;
 using System.Collections.Generic;
-
+using UnityEngine;
+using UnityEngine.AI;
+using static UnityEngine.GraphicsBuffer;
 public class EnemyAI : MonoBehaviour
 {
     public Transform player;
+    public GameObject vision;
+    public NavMeshAgent agent;
     public float chaseRange = 5f;
     public float catchRange = 1f;
     public float moveSpeed = 3f;
@@ -14,6 +17,8 @@ public class EnemyAI : MonoBehaviour
 
     private void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
+        vision = GameObject.Child
         // Buat tree
         Node catchPlayer = new Sequence(new List<Node> {
             new CheckPlayerInRange(transform, player, catchRange),
@@ -35,6 +40,15 @@ public class EnemyAI : MonoBehaviour
         root.Evaluate();
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        var parent = gameObject;
+        if (collision.transform)
+    }
+    private Node.NodeState CheckVision()
+    {
+
+    }
     private Node.NodeState CatchPlayer()
     {
         Debug.Log("Player tertangkap!");
@@ -43,7 +57,7 @@ public class EnemyAI : MonoBehaviour
 
     private Node.NodeState ChasePlayer()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
+        agent.SetDestination(player.position);
         return Node.NodeState.Running;
     }
 

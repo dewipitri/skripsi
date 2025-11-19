@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CheckPlayerInRange : Node
@@ -19,4 +20,6 @@ public class CheckPlayerInRange : Node
         state = dist <= range ? NodeState.Success : NodeState.Failure;
         return state;
     }
+
+    OnCollisionEnter2D 
 }
