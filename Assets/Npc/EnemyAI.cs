@@ -21,7 +21,7 @@ public class EnemyAI : MonoBehaviour
         if(agent==null)
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
-        agent.updatePosition = false;
+        //agent.updatePosition = false;
         //vision = GameObject.Child
         // Buat tree
         transform.rotation = Quaternion.Euler(0, 0, 0);
@@ -77,9 +77,9 @@ public class EnemyAI : MonoBehaviour
     private Node.NodeState Patrol()
     {
         Transform target = patrolPoints[currentPoint];
-        //agent.SetDestination(target.position);
+        agent.SetDestination(target.position);
         //Debug.Log(agent.destination);
-        transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
+        //transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
 
         if (Vector2.Distance(transform.position, target.position) < 0.1f)
             currentPoint = (currentPoint + 1) % patrolPoints.Length;
