@@ -20,6 +20,4 @@ public class CheckPlayerInRange : Node
         state = dist <= range ? NodeState.Success : NodeState.Failure;
         return state;
     }
-
-    OnCollisionEnter2D 
 }
