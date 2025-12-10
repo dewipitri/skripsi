@@ -4033,17 +4033,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43bbfd89870bb5b47bf77488d1e92274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  player: {fileID: 1312635507}
-  vision: {fileID: 0}
-  agent: {fileID: 0}
+  blackboard:
+    player: {fileID: 1312635507}
+    vision: {fileID: 1395495171}
+    agent: {fileID: 0}
+    patrolPoints:
+    - {fileID: 1186631170}
+    - {fileID: 2139488668}
+    - {fileID: 1720891177}
+    - {fileID: 200174266}
+    currentPoint: 0
   chaseRange: 1.5
   catchRange: 0.25
   moveSpeed: 3
-  patrolPoints:
-  - {fileID: 2139488668}
-  - {fileID: 1186631170}
-  - {fileID: 200174266}
-  - {fileID: 1720891177}
 --- !u!58 &1056546767
 CircleCollider2D:
   m_ObjectHideFlags: 0

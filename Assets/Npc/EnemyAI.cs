@@ -1,37 +1,51 @@
 using System.Collections.Generic;
-using Unity.Jobs;
 using UnityEngine;
 using UnityEngine.AI;
-using static UnityEngine.GraphicsBuffer;
-public class EnemyAI : MonoBehaviour
+
+[System.Serializable]
+public class Blackboard
 {
     public Transform player;
     public GameObject vision;
     public NavMeshAgent agent;
+    public Transform[] patrolPoints;
+
+    public int currentPoint = 0;
+}
+public class EnemyAI : MonoBehaviour
+{
+    public Blackboard blackboard;
+    //public Transform player;
+    //public GameObject vision;
+    //public NavMeshAgent agent;
     public float chaseRange = 5f;
     public float catchRange = 1f;
     public float moveSpeed = 3f;
-    public Transform[] patrolPoints;
+    //public Transform[] patrolPoints;
 
-    private int currentPoint = 0;
+    //private int currentPoint = 0;
     private Node root;
 
     private void Start()
     {
-        if(agent==null)
-        agent = GetComponent<NavMeshAgent>();
-        agent.updateRotation = false;
+        if(blackboard.agent==null)
+        //agent = GetComponent<NavMeshAgent>();
+        //agent.updateRotation = false;
+
+        blackboard.agent = GetComponent<NavMeshAgent>();
+        blackboard.agent.updateRotation = false;
+
         //agent.updatePosition = false;
         //vision = GameObject.Child
         // Buat tree
         transform.rotation = Quaternion.Euler(0, 0, 0);
         Node catchPlayer = new Sequence(new List<Node> {
-            new CheckPlayerInRange(transform, player, catchRange),
+            new CheckPlayerInRange(transform, blackboard.player, catchRange),
             new ActionNode(() => CatchPlayer())
         });
 
         Node chasePlayer = new Sequence(new List<Node> {
-            new CheckPlayerInRange(transform, player, chaseRange),
+            new CheckPlayerInRange(transform, blackboard.player, chaseRange),
             new ActionNode(() => ChasePlayer())
         });
 
@@ -70,19 +84,19 @@ public class EnemyAI : MonoBehaviour
     private Node.NodeState ChasePlayer()
     {
         Debug.Log("Mengejar player");
-        agent.SetDestination(player.position);
+        blackboard.agent.SetDestination(blackboard.player.position);
         return Node.NodeState.Running;
     }
 
     private Node.NodeState Patrol()
     {
-        Transform target = patrolPoints[currentPoint];
-        agent.SetDestination(target.position);
+        Transform target = blackboard.patrolPoints[blackboard.currentPoint];
+         blackboard.agent.SetDestination(target.position);
         //Debug.Log(agent.destination);
         //transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
 
         if (Vector2.Distance(transform.position, target.position) < 0.1f)
-            currentPoint = (currentPoint + 1) % patrolPoints.Length;
+            blackboard.currentPoint = (blackboard.currentPoint + 1) % blackboard.patrolPoints.Length;
 
         return Node.NodeState.Running;
     }
