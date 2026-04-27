@@ -6,6 +6,7 @@ public class PlayerControler : MonoBehaviour
     public float moveSpeed = 100f;
     private Rigidbody2D rb;
     private Vector2 moveInput;
+    private Animator animator;
 
     private PlayerControl controls;
 
@@ -31,11 +32,22 @@ public class PlayerControler : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
+        if (moveInput!= Vector2.zero)
+        {
+            if (moveInput.x < 0) GetComponent<SpriteRenderer>().flipX = true;
+            if (moveInput.x > 0) GetComponent<SpriteRenderer>().flipX = false;
+            
+            animator.Play("Walk Player");
+        } else
+        {
+            animator.Play("Idle Player");
+        }
     }
 
     void OnMove(InputAction.CallbackContext context)
