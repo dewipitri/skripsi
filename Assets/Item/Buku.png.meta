@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 1651fb3e9ace78748a742c9c398a0bb8
+guid: b9c36c19d36482b48b647871250277f1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6712305883819797476
-    second: Tak berjudul119_20260427210751_0
+      213: -4165226181699472586
+    second: Buku_0
+  - first:
+      213: -4348640994202800498
+    second: Buku_1
+  - first:
+      213: -7394818456103645394
+    second: Buku_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +119,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tak berjudul119_20260427210751_0
+      name: Buku_0
       rect:
         serializedVersion: 2
-        x: 100
-        y: 4
-        width: 370
-        height: 595
-      alignment: 9
-      pivot: {x: 0.664105, y: 0.1}
+        x: 1696
+        y: 1683
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ebe7d453a6e62d50800000000000000
-      internalID: 6712305883819797476
+      spriteID: 63375a62bd42236c0800000000000000
+      internalID: -4165226181699472586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buku_1
+      rect:
+        serializedVersion: 2
+        x: 1877
+        y: 1683
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e27dc4e0686a3c0800000000000000
+      internalID: -4348640994202800498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Buku_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 182
+        width: 1721
+        height: 1337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f80792bc3506990800000000000000
+      internalID: -7394818456103645394
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ae71d6410890b014f936faa0856686c6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tak berjudul119_20260427210751_0: 6712305883819797476
+      Buku_0: -4165226181699472586
+      Buku_1: -4348640994202800498
+      Buku_2: -7394818456103645394
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,12 +1,18 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerControler : MonoBehaviour
 {
+    public static event Action OnInteractItem;
+
     public float moveSpeed = 100f;
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private Animator animator;
+
+    private bool isHidden = false;
+    public Vector2 currentPosition;
 
     private PlayerControl controls;
 
@@ -20,13 +26,21 @@ public class PlayerControler : MonoBehaviour
         controls.Enable();
         controls.Player.Move.performed += OnMove;
         controls.Player.Move.canceled += OnMove;
+        controls.Player.Interact.performed += OnInteract;
+        controls.Player.Interact.canceled += OnInteract;
+
+        HidePlayer.OnChangeHideStatus += ChangeHideStatus;
     }
 
     void OnDisable()
     {
         controls.Player.Move.performed -= OnMove;
         controls.Player.Move.canceled -= OnMove;
+        controls.Player.Interact.performed -= OnInteract;
+        controls.Player.Interact.canceled -= OnInteract;
         controls.Disable();
+
+        HidePlayer.OnChangeHideStatus -= ChangeHideStatus;
     }
 
     void Start()
@@ -38,13 +52,14 @@ public class PlayerControler : MonoBehaviour
     void FixedUpdate()
     {
         rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
-        if (moveInput!= Vector2.zero)
+        if (moveInput != Vector2.zero)
         {
             if (moveInput.x < 0) GetComponent<SpriteRenderer>().flipX = true;
             if (moveInput.x > 0) GetComponent<SpriteRenderer>().flipX = false;
-            
+
             animator.Play("Walk Player");
-        } else
+        }
+        else
         {
             animator.Play("Idle Player");
         }
@@ -52,6 +67,16 @@ public class PlayerControler : MonoBehaviour
 
     void OnMove(InputAction.CallbackContext context)
     {
-        moveInput = context.ReadValue<Vector2>();
+        moveInput = context.ReadValue<Vector2>().normalized;
+    }
+
+    void OnInteract(InputAction.CallbackContext context)
+    {
+        OnInteractItem?.Invoke();
+    }
+
+    void ChangeHideStatus(bool hide)
+    {
+        gameObject.SetActive(hide);
     }
 }

@@ -76,9 +76,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 2046666327
+  m_SortingLayer: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 5446630703099270976}
   - component: {fileID: 4982979848895412707}
   - component: {fileID: 8157779638817244653}
-  - component: {fileID: 7397537557680846820}
+  - component: {fileID: 1779852789654068897}
   m_Layer: 3
   m_Name: Item
   m_TagString: Untagged
@@ -219,7 +219,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1.5
---- !u!114 &7397537557680846820
+--- !u!114 &1779852789654068897
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,6 +228,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5857371753098325271}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fe7e959824100f4fb60e27874a62d0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 00c8a0971229acd4ca7c966706f2eccf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Itempopup

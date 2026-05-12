@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1651fb3e9ace78748a742c9c398a0bb8
+guid: f6325920c3251d448b8fe3015277ef05
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6712305883819797476
-    second: Tak berjudul119_20260427210751_0
+      213: -5835727759465983738
+    second: Tempat sampah_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tak berjudul119_20260427210751_0
+      name: Tempat sampah_0
       rect:
         serializedVersion: 2
-        x: 100
-        y: 4
-        width: 370
-        height: 595
+        x: 404
+        y: 59
+        width: 1188
+        height: 1572
       alignment: 9
-      pivot: {x: 0.664105, y: 0.1}
+      pivot: {x: 0.5, y: 0.125}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ebe7d453a6e62d50800000000000000
-      internalID: 6712305883819797476
+      spriteID: 601d4239584530fa0800000000000000
+      internalID: -5835727759465983738
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ae71d6410890b014f936faa0856686c6
+    spriteID: 5840ae51d3c9cff48b3e7eb8f5d6b83c
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tak berjudul119_20260427210751_0: 6712305883819797476
+      Tempat sampah_0: -5835727759465983738
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

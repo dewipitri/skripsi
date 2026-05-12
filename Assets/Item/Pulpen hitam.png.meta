@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1651fb3e9ace78748a742c9c398a0bb8
+guid: 9da40f0a5417d2c46b0a5bc96f20a163
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6712305883819797476
-    second: Tak berjudul119_20260427210751_0
+      213: -6773198675557330801
+    second: Pulpen hitam_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tak berjudul119_20260427210751_0
+      name: Pulpen hitam_0
       rect:
         serializedVersion: 2
-        x: 100
-        y: 4
-        width: 370
-        height: 595
-      alignment: 9
-      pivot: {x: 0.664105, y: 0.1}
+        x: 202
+        y: 98
+        width: 1653
+        height: 1437
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ebe7d453a6e62d50800000000000000
-      internalID: 6712305883819797476
+      spriteID: f805246c0b3c002a0800000000000000
+      internalID: -6773198675557330801
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ae71d6410890b014f936faa0856686c6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tak berjudul119_20260427210751_0: 6712305883819797476
+      Pulpen hitam_0: -6773198675557330801
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

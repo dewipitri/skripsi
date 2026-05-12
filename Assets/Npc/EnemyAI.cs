@@ -40,12 +40,13 @@ public class EnemyAI : MonoBehaviour
         // Buat tree
         transform.rotation = Quaternion.Euler(0, 0, 0);
         Node catchPlayer = new Sequence(new List<Node> {
-            new CheckPlayerInRange(transform, blackboard.player, catchRange),
+            //new CheckPlayerInRange(transform, blackboard.player, catchRange),
+            new CheckPlayerInRange(),
             new ActionNode(() => CatchPlayer())
         });
 
         Node chasePlayer = new Sequence(new List<Node> {
-            new CheckPlayerInRange(transform, blackboard.player, chaseRange),
+            new CheckPlayerInRange(),
             new ActionNode(() => ChasePlayer())
         });
 
