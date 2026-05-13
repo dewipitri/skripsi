@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: c7b074fc3ba47ad41b520590157d858a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9108262155918434726
+    second: Tak berjudul118_20260513201308_0
+  - first:
+      213: -4962057280939553424
+    second: Tak berjudul118_20260513201308_1
+  - first:
+      213: -2609236718021727344
+    second: Tak berjudul118_20260513201308_2
+  - first:
+      213: 7921424190206041468
+    second: Tak berjudul118_20260513201308_3
+  - first:
+      213: 8615100973322865651
+    second: Tak berjudul118_20260513201308_4
+  - first:
+      213: 4660345871136355637
+    second: Tak berjudul118_20260513201308_5
+  - first:
+      213: 3374293358057787360
+    second: Tak berjudul118_20260513201308_6
+  - first:
+      213: -8976661526836734896
+    second: Tak berjudul118_20260513201308_7
+  - first:
+      213: 1752538438294746982
+    second: Tak berjudul118_20260513201308_8
+  - first:
+      213: -7993041679643165270
+    second: Tak berjudul118_20260513201308_9
+  - first:
+      213: -4357785717433600651
+    second: Tak berjudul118_20260513201308_10
+  - first:
+      213: -7082458031158972076
+    second: Tak berjudul118_20260513201308_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tak berjudul118_20260513201308_0
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 358
+        height: 619
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e195ba3d3f89180800000000000000
+      internalID: -9108262155918434726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tak berjudul118_20260513201308_1
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 175
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d057e613b332bb0800000000000000
+      internalID: -4962057280939553424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tak berjudul118_20260513201308_2
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 182
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ba86f77012acbd0800000000000000
+      internalID: -2609236718021727344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tak berjudul118_20260513201308_3
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 139
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7dda6cd45d8eed60800000000000000
+      internalID: 7921424190206041468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tak berjudul118_20260513201308_4
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 163
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb0803c0bcfe8770800000000000000
+      internalID: 8615100973322865651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tak berjudul118_20260513201308_5
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 170
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5357a83d0efdca040800000000000000
+      internalID: 4660345871136355637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tak berjudul118_20260513201308_6
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 103
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef8efe6ee5e3de20800000000000000
+      internalID: 3374293358057787360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tak berjudul118_20260513201308_7
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 131
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0541bf7d6ed7c6380800000000000000
+      internalID: -8976661526836734896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tak berjudul118_20260513201308_8
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 127
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667b6cd9c64425810800000000000000
+      internalID: 1752538438294746982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tak berjudul118_20260513201308_9
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 0
+        width: 55
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad3af9f0f2031190800000000000000
+      internalID: -7993041679643165270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tak berjudul118_20260513201308_10
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 16
+        width: 50
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57579118af80683c0800000000000000
+      internalID: -4357785717433600651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tak berjudul118_20260513201308_11
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 91
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4513824f1fd06bd90800000000000000
+      internalID: -7082458031158972076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tak berjudul118_20260513201308_0: -9108262155918434726
+      Tak berjudul118_20260513201308_1: -4962057280939553424
+      Tak berjudul118_20260513201308_10: -4357785717433600651
+      Tak berjudul118_20260513201308_11: -7082458031158972076
+      Tak berjudul118_20260513201308_2: -2609236718021727344
+      Tak berjudul118_20260513201308_3: 7921424190206041468
+      Tak berjudul118_20260513201308_4: 8615100973322865651
+      Tak berjudul118_20260513201308_5: 4660345871136355637
+      Tak berjudul118_20260513201308_6: 3374293358057787360
+      Tak berjudul118_20260513201308_7: -8976661526836734896
+      Tak berjudul118_20260513201308_8: 1752538438294746982
+      Tak berjudul118_20260513201308_9: -7993041679643165270
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
