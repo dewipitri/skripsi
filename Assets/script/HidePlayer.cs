@@ -25,7 +25,7 @@ public class HidePlayer : MonoBehaviour
         if (player != null)
         {
             isPlayerHidden = false;
-            player.gameObject.layer = 0;
+            player.gameObject.layer = 8;
         }
     }
 }

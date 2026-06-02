@@ -10,6 +10,7 @@ public class Blackboard
     public NavMeshAgent agent;
     public Transform[] patrolPoints;
 
+    
     public int currentPoint = 0;
 }
 public class EnemyAI : MonoBehaviour
@@ -22,12 +23,13 @@ public class EnemyAI : MonoBehaviour
     public float catchRange = 1f;
     public float moveSpeed = 3f;
     //public Transform[] patrolPoints;
-
+    Animator animator;
     //private int currentPoint = 0;
     private Node root;
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         if(blackboard.agent==null)
         //agent = GetComponent<NavMeshAgent>();
         //agent.updateRotation = false;
@@ -58,24 +60,10 @@ public class EnemyAI : MonoBehaviour
     private void Update()
     {
         transform.rotation = Quaternion.Euler(0, 0, 0);
-
+        animator.SetFloat("Speed", blackboard.agent.velocity.magnitude);
         root.Evaluate();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        ////var parent = gameObject;
-        ////if (collision.transform.parent == gameObject)
-        ////{
-        ////    collision.
-        //}
-
-        Debug.Log(collision.collider);
-    }
-    //private Node.NodeState CheckVision()
-    //{
-
-    //}
     private Node.NodeState CatchPlayer()
     {
         Debug.Log("Player tertangkap!");
@@ -93,6 +81,7 @@ public class EnemyAI : MonoBehaviour
     {
         Transform target = blackboard.patrolPoints[blackboard.currentPoint];
          blackboard.agent.SetDestination(target.position);
+         
         //Debug.Log(agent.destination);
         //transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);
 

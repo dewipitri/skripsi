@@ -138,11 +138,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 117
-        y: 1
+        y: 0
         width: 358
-        height: 630
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 640
+      alignment: 9
+      pivot: {x: 0.575, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -155,165 +155,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Tak berjudul118_20260513201237_1
-      rect:
-        serializedVersion: 2
-        x: 624
-        y: 175
-        width: 9
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bf36a85c04e94dd30800000000000000
-      internalID: 4455359932405539835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tak berjudul118_20260513201237_2
-      rect:
-        serializedVersion: 2
-        x: 632
-        y: 182
-        width: 8
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d458e0ab753189b0800000000000000
-      internalID: -5079720099600378671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tak berjudul118_20260513201237_3
-      rect:
-        serializedVersion: 2
-        x: 582
-        y: 131
-        width: 8
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17817c31fe9caeb40800000000000000
-      internalID: 5470406726061070449
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tak berjudul118_20260513201237_4
-      rect:
-        serializedVersion: 2
-        x: 589
-        y: 139
-        width: 35
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a678c015960057e90800000000000000
-      internalID: -7028711191110449302
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tak berjudul118_20260513201237_5
-      rect:
-        serializedVersion: 2
-        x: 511
-        y: 16
-        width: 50
-        height: 89
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc8ff5a13f63466c0800000000000000
-      internalID: -4151132538781304629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tak berjudul118_20260513201237_6
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 103
-        width: 24
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c63a473cb07d57a0800000000000000
-      internalID: -6386824742857722175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tak berjudul118_20260513201237_7
-      rect:
-        serializedVersion: 2
-        x: 506
-        y: 0
-        width: 8
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1a315984b8fab08f0800000000000000
-      internalID: -573171514806561887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c903393f670e2de45a4e14f41b222683
     internalID: 0
     vertices: []
     indices: 
