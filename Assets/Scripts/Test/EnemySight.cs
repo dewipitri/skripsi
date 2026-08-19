@@ -14,6 +14,17 @@ namespace Test
 
         private NavMeshAgent agent;
 
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, viewRadius);
+            Vector3 leftBoundary = Quaternion.Euler(0, 0, -viewAngle / 2) * transform.right;
+            Vector3 rightBoundary = Quaternion.Euler(0, 0, viewAngle / 2) * transform.right;
+            Gizmos.color = Color.green;
+            Gizmos.DrawLine(transform.position, transform.position + leftBoundary * viewRadius);
+            Gizmos.DrawLine(transform.position, transform.position + rightBoundary * viewRadius);
+        }
+
         private void Start()
         {
             agent = GetComponentInParent<NavMeshAgent>();

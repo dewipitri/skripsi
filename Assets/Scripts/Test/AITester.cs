@@ -47,9 +47,15 @@ namespace Test
                 new BehaviorTree1.Sequence(new List<BehaviorTree1.Node>
                 {
                     new BehaviorTree1.LeafNode(CheckVision),
-                    new BehaviorTree1.LeafNode(ActionMoveToTarget),
-                    new BehaviorTree1.LeafNode(ActionCatch),
+                    new BehaviorTree1.LeafNode(ActionChase),
+
+                    new BehaviorTree1.Sequence(new List<BehaviorTree1.Node>
+                    {
+                        new BehaviorTree1.LeafNode(CheckDistance),
+                        new BehaviorTree1.LeafNode(ActionCatch),
+                    }),
                 }),
+
 
                 new BehaviorTree1.LeafNode(ActionPatrol)
             });
@@ -86,20 +92,34 @@ namespace Test
                 animator.Play("idle");
         }
 
-        BehaviorTree1.NodeState ActionCatch()
+        BehaviorTree1.NodeState CheckDistance()
         {
             float dist = Vector3.Distance(
-                transform.position, 
+                transform.position,
                 ((GameObject)_blackboard.Get<GameObject>("Player")).transform.position
                 );
-            
+
             if (dist <= catchRange)
             {
-                //Debug.Log("Player Tertangkap!");
-                CatchingTrigger?.Invoke();
                 return BehaviorTree1.NodeState.Success;
             }
             return BehaviorTree1.NodeState.Failure;
+        }
+
+        BehaviorTree1.NodeState ActionCatch()
+        {
+            //float dist = Vector3.Distance(
+            //    transform.position, 
+            //    ((GameObject)_blackboard.Get<GameObject>("Player")).transform.position
+            //    );
+            
+            //if (dist <= catchRange)
+            //{
+                //Debug.Log("Player Tertangkap!");
+                CatchingTrigger?.Invoke();
+                return BehaviorTree1.NodeState.Success;
+            //}
+            //return BehaviorTree1.NodeState.Failure;
         }
 
         BehaviorTree1.NodeState CheckVision()
@@ -179,7 +199,7 @@ namespace Test
             return BehaviorTree1.NodeState.Running;
         }
 
-        BehaviorTree1.NodeState ActionMoveToTarget()
+        BehaviorTree1.NodeState ActionChase()
         {
             Transform target = _blackboard.Get<Transform>("target");
 
