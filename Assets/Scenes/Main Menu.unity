@@ -229,7 +229,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 923.76, y: 519.61}
+  m_SizeDelta: {x: 1026.375, y: 627.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &70219559
 MonoBehaviour:
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2847718448216160014, guid: 0528998ef167fdf4a8c94e6266ab930c, type: 3}
+  m_Sprite: {fileID: -2986818500251847579, guid: 94247a76569b45644845e853e2b1e8d7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1113,7 +1113,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: game
+          m_StringArgument: Prologue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &920229735

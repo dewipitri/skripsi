@@ -24805,7 +24805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4121696983365197466, guid: 16d58246a53344148b14a4501fa15249, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: map2
+      value: Stage2
       objectReference: {fileID: 0}
     - target: {fileID: 4121696983365197466, guid: 16d58246a53344148b14a4501fa15249, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
