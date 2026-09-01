@@ -1,16 +1,19 @@
 using System;
 
-public class ActionNode : Node
+namespace Agent
 {
-    private Func<NodeState> action;
-
-    public ActionNode(Func<NodeState> action)
+    public class ActionNode : Node
     {
-        this.action = action;
-    }
+        private Func<NodeState> action;
 
-    public override NodeState Evaluate()
-    {
-        return action.Invoke();
+        public ActionNode(Func<NodeState> action)
+        {
+            this.action = action;
+        }
+
+        public override NodeState Evaluate()
+        {
+            return action.Invoke();
+        }
     }
 }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections.Generic;
+using BehaviorTree;
 
 namespace Test
 {
@@ -13,8 +14,8 @@ namespace Test
         public LayerMask targetMask;
         public LayerMask obstacleMask;
 
-        private BehaviorTree1.Node _root;
-        private BehaviorTree1.Blackboard _blackboard;
+        private Node _root;
+        private Blackboard _blackboard;
         private NavMeshAgent _agent;
 
         private int currentIdx = 0;
@@ -36,28 +37,28 @@ namespace Test
             _agent.updateRotation = false;
             _agent.updateUpAxis = false;
 
-            _blackboard = new BehaviorTree1.Blackboard();
+            _blackboard = new Blackboard();
 
             _blackboard.Set("Player", GameObject.FindWithTag("Player"));
 
-            _root = new BehaviorTree1.Selector(new List<BehaviorTree1.Node>
+            _root = new Selector(new List<Node>
             {
-                new BehaviorTree1.Sequence(new List<BehaviorTree1.Node>
+                new Sequence(new List<Node>
                 {
-                    new BehaviorTree1.LeafNode(CheckVision),
-                    new BehaviorTree1.LeafNode(ActionMoveToTarget),
-                    new BehaviorTree1.LeafNode(() => {
+                    new LeafNode(CheckVision),
+                    new LeafNode(ActionMoveToTarget),
+                    new LeafNode(() => {
                         // Logika Catch
                         float dist = Vector3.Distance(transform.position, ((GameObject)_blackboard.Get<GameObject>("Player")).transform.position);
                         if(dist <= catchRange) {
                             Debug.Log("Player Tertangkap!");
-                            return BehaviorTree1.NodeState.Success;
+                            return NodeState.Success;
                         }
-                        return BehaviorTree1.NodeState.Failure;
+                        return NodeState.Failure;
                     })
                 }),
 
-                new BehaviorTree1.LeafNode(ActionPatrol)
+                new LeafNode(ActionPatrol)
             });
 
             _root.SetBlackboard(_blackboard);
@@ -67,11 +68,11 @@ namespace Test
 
         void Update() => _root.Evaluate();
 
-        private void AssignBlackboardRecursively(BehaviorTree1.Node node, BehaviorTree1.Blackboard bb)
+        private void AssignBlackboardRecursively(Node node, Blackboard bb)
         {
             node.SetBlackboard(bb);
             // Jika node adalah Selector/Sequence, kita perlu turun ke bawah
-            if (node is BehaviorTree1.Selector s) { /* Iterasi list nodes di dalam selector */ }
+            if (node is Selector s) { /* Iterasi list nodes di dalam selector */ }
             // Catatan: Idealnya Base Node memiliki list children agar rekursi ini mudah.
         }
 
@@ -93,7 +94,7 @@ namespace Test
                 animator.Play("idle");
         }
 
-        BehaviorTree1.NodeState CheckVision()
+        NodeState CheckVision()
         {
             Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, viewRadius, targetMask);
 
@@ -115,26 +116,26 @@ namespace Test
                     if (walls)
                     {
                         // Debug.DrawRay(transform.position, target.position, Color.red);
-                        return BehaviorTree1.NodeState.Failure;
+                        return NodeState.Failure;
                     }
                     else
                     {
                         // Debug.DrawRay(transform.position, target.position, Color.green);
                         _blackboard.Set("target", target);
                         _blackboard.Set("canSeePlayer", true);
-                        return BehaviorTree1.NodeState.Success;
+                        return NodeState.Success;
                     }
                 }
             }
 
             _blackboard.Set("target", null);
             _blackboard.Set("canSeePlayer", false);
-            return BehaviorTree1.NodeState.Failure;
+            return NodeState.Failure;
         }
 
-        BehaviorTree1.NodeState ActionPatrol()
+        NodeState ActionPatrol()
         {
-            if (waypoints.Length == 0) return BehaviorTree1.NodeState.Failure;
+            if (waypoints.Length == 0) return NodeState.Failure;
 
             float angle = Mathf.Atan2(_agent.velocity.y, _agent.velocity.x) * Mathf.Rad2Deg;
 
@@ -148,14 +149,14 @@ namespace Test
                 currentIdx = (currentIdx + 1) % waypoints.Length;
                 _agent.SetDestination(waypoints[currentIdx].position);
             }
-            return BehaviorTree1.NodeState.Running;
+            return NodeState.Running;
         }
 
-        BehaviorTree1.NodeState ActionMoveToTarget()
+        NodeState ActionMoveToTarget()
         {
             Transform target = _blackboard.Get<Transform>("target");
 
-            if (target == null) return BehaviorTree1.NodeState.Failure;
+            if (target == null) return NodeState.Failure;
 
             float distance = Vector2.Distance(_agent.transform.position, target.position);
 
@@ -167,10 +168,10 @@ namespace Test
                 ChangeAnimation();
                 ChangeDirection();
                 _agent.SetDestination(target.position);
-                return BehaviorTree1.NodeState.Running;
+                return NodeState.Running;
             }
 
-            return BehaviorTree1.NodeState.Success;
+            return NodeState.Success;
         }
     }
 }

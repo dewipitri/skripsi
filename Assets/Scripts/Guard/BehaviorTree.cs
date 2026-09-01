@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace BehaviorTree1
+namespace BehaviorTree
 {
     public class Blackboard
     {

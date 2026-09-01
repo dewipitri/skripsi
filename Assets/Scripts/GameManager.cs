@@ -1,7 +1,8 @@
 using System.Collections;
 using UnityEngine;
+using Item;
 using TMPro;
-using Test;
+using Guard;
 
 public class GameManager : MonoBehaviour
 {
@@ -37,14 +38,14 @@ public class GameManager : MonoBehaviour
     private void OnEnable()
     {
         ItemCollectible.OnInteractObject += AddItem;
-        AITester.CatchingTrigger += GameOver;
+        AIGuard.CatchingTrigger += GameOver;
         StartStage.OnStartStage += StartTime;
 
     }
     private void OnDisable()
     {
         ItemCollectible.OnInteractObject -= AddItem;
-        AITester.CatchingTrigger -= GameOver;
+        AIGuard.CatchingTrigger -= GameOver;
         StartStage.OnStartStage -= StartTime;
     }
 

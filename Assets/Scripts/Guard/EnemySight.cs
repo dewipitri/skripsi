@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Test
+namespace Guard
 {
     public class EnemySight : MonoBehaviour
     {

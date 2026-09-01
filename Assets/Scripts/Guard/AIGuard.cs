@@ -1,11 +1,12 @@
 using UnityEngine;
 using UnityEngine.AI;
 using System.Collections.Generic;
+using BehaviorTree;
 using System;
 
-namespace Test
+namespace Guard
 {
-    public class AITester : MonoBehaviour
+    public class AIGuard : MonoBehaviour
     {
         [Header("Patrol")]
         public Transform[] waypoints;
@@ -19,8 +20,8 @@ namespace Test
         public LayerMask targetMask;
         public LayerMask obstacleMask;
 
-        private BehaviorTree1.Node _root;
-        private BehaviorTree1.Blackboard _blackboard;
+        private Node _root;
+        private Blackboard _blackboard;
         private NavMeshAgent _agent;
 
         private int currentIdx = 0;
@@ -38,26 +39,26 @@ namespace Test
             _agent.updateRotation = false;
             _agent.updateUpAxis = false;
 
-            _blackboard = new BehaviorTree1.Blackboard();
+            _blackboard = new Blackboard();
 
             _blackboard.Set("Player", GameObject.FindWithTag("Player"));
 
-            _root = new BehaviorTree1.Selector(new List<BehaviorTree1.Node>
+            _root = new Selector(new List<Node>
             {
-                new BehaviorTree1.Sequence(new List<BehaviorTree1.Node>
+                new Sequence(new List<Node>
                 {
-                    new BehaviorTree1.LeafNode(CheckVision),
-                    new BehaviorTree1.LeafNode(ActionChase),
+                    new LeafNode(CheckVision),
+                    new LeafNode(ActionChase),
 
-                    new BehaviorTree1.Sequence(new List<BehaviorTree1.Node>
+                    new Sequence(new List<Node>
                     {
-                        new BehaviorTree1.LeafNode(CheckDistance),
-                        new BehaviorTree1.LeafNode(ActionCatch),
+                        new LeafNode(CheckDistance),
+                        new LeafNode(ActionCatch),
                     }),
                 }),
 
 
-                new BehaviorTree1.LeafNode(ActionPatrol)
+                new LeafNode(ActionPatrol)
             });
 
             _root.SetBlackboard(_blackboard);
@@ -66,11 +67,11 @@ namespace Test
 
         void Update() => _root.Evaluate();
 
-        private void AssignBlackboardRecursively(BehaviorTree1.Node node, BehaviorTree1.Blackboard bb)
+        private void AssignBlackboardRecursively(Node node, Blackboard bb)
         {
             node.SetBlackboard(bb);
             // Jika node adalah Selector/Sequence, kita perlu turun ke bawah
-            if (node is BehaviorTree1.Selector s) { /* Iterasi list nodes di dalam selector */ }
+            if (node is Selector s) { /* Iterasi list nodes di dalam selector */ }
             // Catatan: Idealnya Base Node memiliki list children agar rekursi ini mudah.
         }
 
@@ -92,7 +93,7 @@ namespace Test
                 animator.Play("idle");
         }
 
-        BehaviorTree1.NodeState CheckDistance()
+        NodeState CheckDistance()
         {
             float dist = Vector3.Distance(
                 transform.position,
@@ -101,12 +102,12 @@ namespace Test
 
             if (dist <= catchRange)
             {
-                return BehaviorTree1.NodeState.Success;
+                return NodeState.Success;
             }
-            return BehaviorTree1.NodeState.Failure;
+            return NodeState.Failure;
         }
 
-        BehaviorTree1.NodeState ActionCatch()
+        NodeState ActionCatch()
         {
             //float dist = Vector3.Distance(
             //    transform.position, 
@@ -117,12 +118,12 @@ namespace Test
             //{
                 //Debug.Log("Player Tertangkap!");
                 CatchingTrigger?.Invoke();
-                return BehaviorTree1.NodeState.Success;
+                return NodeState.Success;
             //}
-            //return BehaviorTree1.NodeState.Failure;
+            //return NodeState.Failure;
         }
 
-        BehaviorTree1.NodeState CheckVision()
+        NodeState CheckVision()
         {
             GameObject attention = gameObject.transform.Find("Attention").gameObject;
 
@@ -158,19 +159,19 @@ namespace Test
                 _blackboard.Set("target", vision.CurrentTarget);
                 _blackboard.Set("canSeePlayer", true);
 
-                return BehaviorTree1.NodeState.Success;
+                return NodeState.Success;
             }
 
             _blackboard.Set("target", null);
             _blackboard.Set("canSeePlayer", false);
             isJustSeePlayer = true;
 
-            return BehaviorTree1.NodeState.Failure;
+            return NodeState.Failure;
         }
 
-        BehaviorTree1.NodeState ActionPatrol()
+        NodeState ActionPatrol()
         {
-            if (waypoints.Length == 0) return BehaviorTree1.NodeState.Failure;
+            if (waypoints.Length == 0) return NodeState.Failure;
 
             if (isWaitingPatrol)
             {
@@ -183,7 +184,7 @@ namespace Test
                     _agent.SetDestination(waypoints[currentIdx].position);
                 }
 
-                return BehaviorTree1.NodeState.Running;
+                return NodeState.Running;
             }
             ChangeAnimation();
             ChangeDirection();
@@ -196,14 +197,14 @@ namespace Test
 
                 _agent.isStopped = true;
             }
-            return BehaviorTree1.NodeState.Running;
+            return NodeState.Running;
         }
 
-        BehaviorTree1.NodeState ActionChase()
+        NodeState ActionChase()
         {
             Transform target = _blackboard.Get<Transform>("target");
 
-            if (target == null) return BehaviorTree1.NodeState.Failure;
+            if (target == null) return NodeState.Failure;
 
             float distance = Vector2.Distance(_agent.transform.position, target.position);
 
@@ -212,10 +213,10 @@ namespace Test
                 ChangeAnimation();
                 ChangeDirection();
                 _agent.SetDestination(target.position);
-                return BehaviorTree1.NodeState.Running;
+                return NodeState.Running;
             }
 
-            return BehaviorTree1.NodeState.Success;
+            return NodeState.Success;
         }
     }
 }
