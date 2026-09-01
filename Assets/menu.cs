@@ -1,15 +1,29 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class menu : MonoBehaviour
+namespace UI
 {
-    public void StartButton(string scenename)
+    public class menu : MonoBehaviour
     {
-        SceneManager.LoadScene(scenename);
-    }
+        public void PlayButton(string sceneName)
+        {
+            SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Single);
+            SceneManager.LoadSceneAsync("Tutorial", LoadSceneMode.Additive);
+        }
 
-    public void ExitButton()
-    {
-        Application.Quit();
+        public void UnloadTutorial()
+        {
+            SceneManager.UnloadSceneAsync("Tutorial", UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+        }
+
+        public void StartButton(string scenename)
+        {
+            SceneManager.LoadScene(scenename);
+        }
+
+        public void ExitButton()
+        {
+            Application.Quit();
+        }
     }
 }
