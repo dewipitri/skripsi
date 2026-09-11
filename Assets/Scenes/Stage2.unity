@@ -6933,7 +6933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NextMap
   isEnd: 1
-  nextScene: Main Menu
+  nextScene: Epilogue
 --- !u!1 &542127123
 GameObject:
   m_ObjectHideFlags: 0
