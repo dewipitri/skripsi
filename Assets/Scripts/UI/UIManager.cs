@@ -15,13 +15,13 @@ namespace UI
         private void OnEnable()
         {
             //Debug.Log($"Is gamemanager instance == null? {GameManager.Instance == null}");
-            GameManager.Instance.RegisterUI(this);
+            //GameManager.Instance.RegisterUI(this);
         }
 
         private void OnDisable()
         {
-            if (GameManager.Instance != null)
-                GameManager.Instance.UnregisterUI(this);
+            //if (GameManager.Instance != null)
+            //    GameManager.Instance.UnregisterUI(this);
         }
     }
 }
